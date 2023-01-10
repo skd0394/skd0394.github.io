@@ -1,0 +1,58 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 30px;
+    background-image :url('https://vedabase.io/static/img/header-bg.jpg');
+    height: 75px;
+    align-items: center;
+    font-size: large;
+    font-weight: 500;
+    font-style: oblique;
+    position: sticky;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.navbar div:nth-child(1){
+    font-size: larger;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    width: 50%;
+}
+#ham_icon{
+    display: none;
+}
+
+
+@media screen and (max-width: 900px) {
+    .options{
+        display: none;
+    }
+    #name{
+        margin-right: 70%;   
+    }
+    #ham_icon{
+        display:contents;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .options{
+        display: none;
+    }
+    #name{
+        margin-right: 50%;   
+    }
+    #ham_icon{
+        display:contents;
+    }
+
+}
+#parent{
+    width: 100%;
+    height:max-content;
+    background: linear-gradient(#e66465, #9198e5);
+}

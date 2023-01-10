@@ -1,0 +1,104 @@
+#profile_pic{
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+#profile_pic>img{
+    border-radius: 50% ;
+    width: 80%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#profile_card{
+    height: max-content;
+    width: 30%;
+    /* border:1px solid black; */
+    text-align: center;
+    margin: 10px 10px 20px 20px ;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;}
+#profile_pic>p{
+    /* border: 1px solid black; */
+    width: 90%;
+    margin-left: 20px;
+    font-size: medium;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 10px;
+}
+.Aboutme{
+    display: flex;
+    gap: 40px;
+}
+#greet{
+    /* border: 1px solid black; */
+    width: 60%;
+    text-align: center;
+}
+#greet img{
+    margin:0px 30px 0px 30px;
+    /* border: 1px solid black; */
+}
+
+@media screen and (max-width: 750px) {
+    .Aboutme{
+        display: grid;
+    }
+    #profile_card{
+        height: max-content;
+        width: 90%;
+        /* border:1px solid black; */
+        text-align: center;
+        margin: 10px 10px 20px 20px ;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+    #profile_pic{
+        width: 90%;
+        margin: auto;
+        /* border: 1px solid black; */
+        display: flex;
+        gap: 50px;
+        text-align: center;
+    }
+    #profile_pic>img{
+        border-radius: 50% ;
+        width: 50%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    #hi{
+        background:linear-gradient(to-l, #7928CA, #FF0080);
+		font-size:6xl;
+		font-weight:extrabold;
+		margin-top:10px;
+		/* // border:1px solid black; */
+		display:flex;
+		justify-content:center;
+    }
+    #takeAtur{
+       background :linear-gradient(to-r, red.500, yellow.500);
+		font-size:4xl;
+		font-weight:extrabold;
+		margin-top:20px;
+		display:flex;
+		gap:0px;
+		justify-content:center;
+    }
+    #greet{
+        /* border: 1px solid black; */
+        width: 80%;
+        text-align: center;
+        margin: auto;
+    }
+
+    #greet img{
+        margin:0px 30px 0px 30px;
+        /* border: 1px solid black; */
+    }
+
+}        
+    
+
+
+@media screen and (max-width: 500px) {
+    
+}
