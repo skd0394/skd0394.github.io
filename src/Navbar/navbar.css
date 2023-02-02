@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-around;
     border-radius: 30px;
-    background-image :url('https://vedabase.io/static/img/header-bg.jpg');
+    /* background-image :url('https://vedabase.io/static/img/header-bg.jpg'); */
     height: 75px;
     align-items: center;
     font-size: large;
@@ -50,9 +50,4 @@
         display:contents;
     }
 
-}
-#parent{
-    width: 100%;
-    height:max-content;
-    background: linear-gradient(#e66465, #9198e5);
 }

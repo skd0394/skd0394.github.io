@@ -1,24 +1,25 @@
 import "./navbar.css";
 import {HamburgerIcon} from '@chakra-ui/icons'
 import React from 'react'
-import {NavLink} from "react-router-dom"
-import { Menu,MenuButton,MenuList,MenuItem,IconButton } from "@chakra-ui/react";
+// import {NavLink} from "react-router-dom"
+import { Menu,MenuButton,MenuList,MenuItem,IconButton, Flex } from "@chakra-ui/react";
 import {FcAbout} from 'react-icons/fc'
 import {GiSkills} from "react-icons/gi"
 import {SiCodeproject} from "react-icons/si"
 import {RiContactsFill} from "react-icons/ri"
 import {ImDownload} from "react-icons/im"
 import {HiHome} from 'react-icons/hi'
+import { NavHashLink as NavLink } from "react-router-hash-link";
 
 
 const Navbar = () => {
   return (
-    <div className="navbar">
+    <Flex bgColor={'gray.400'} className="navbar">
          <div id="name">Shivkant Dubey</div>
         <div className="options">
         
         <div><NavLink to="/"><HiHome/>Home</NavLink></div>
-        <div><NavLink to="/aboutme"><FcAbout />About Me</NavLink></div>
+        <div><NavLink to="#aboutme"><FcAbout />About Me</NavLink></div>
         <div><NavLink to="/skills"><GiSkills />Skills</NavLink></div>
         <div><NavLink to="/projects"><SiCodeproject />Projects</NavLink></div>
         <div><NavLink to="/contacts"><RiContactsFill />Contacts</NavLink></div>
@@ -33,7 +34,7 @@ const Navbar = () => {
                 variant='outline'
             />
             <MenuList>
-            <NavLink to="/aboutme"><MenuItem icon={<FcAbout />} >
+            <NavLink to="#aboutme"><MenuItem icon={<FcAbout />} >
                     About Me
                 </MenuItem></NavLink>
                 <NavLink to="/skills"> <MenuItem icon={<GiSkills />}>
@@ -53,7 +54,7 @@ const Navbar = () => {
             
         </div>
         
-    </div>
+    </Flex>
   )
 }
 
