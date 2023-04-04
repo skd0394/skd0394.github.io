@@ -14,19 +14,18 @@ const GitStatics = () => {
                 <Box ml={'400px'} className={'gitStats'}>
                     <Image src='https://github-readme-stats.vercel.app/api/top-langs?username=skd0394&show_icons=true&locale=en&layout=compact' alt='localstats'/>
                 </Box>
-                <Box mr={'400px'}>
-                    <Image src='https://github-readme-stats.vercel.app/api?username=skd0394&show_icons=true&locale=en' alt='localstats'/>
-                </Box>
-                <Box ml={'400px'}>
+                
+                <Box id='github-streak-stats' ml={'400px'}>
                     <Image src='https://github-readme-streak-stats.herokuapp.com/?user=skd0394&' alt='localstats'/>
+                </Box>
+                <Box id='github-top-langs' mr={'400px'}  >
+                    <Image src='https://github-readme-stats.vercel.app/api/top-langs/?username=skd0394&layout=compact' alt='localstats'/>
                 </Box>
         </Flex>
         <Flex m={'50px auto 40px auto'} flexDir={'column'} alignItems={'center'} gap={'40px'}>
             <Heading>My GitHub Calendar</Heading>
             <GitHubCalendar color={'aqua'} username="skd0394" />
         </Flex>
-
-        
     </>
   )
 }

@@ -15,7 +15,7 @@ const AboutMe = () => {
 			<div id='profile_pic'>
 				<img className='home-img' src="https://avatars.githubusercontent.com/u/107461174?s=400&u=c8072d4e15a3869a29398b63a6e3be5b5f3edb40&v=4" alt='profile_pic'/>
 			</div>
-      <a href="/downloads/Shivkant_Dubey_Resume.pdf" download={'Shivkant_Dubey_Resume'} target={'_blank'}><Button mt={20} gap={'5px'}> <ImDownload/> Resume </Button></a>
+      <a id='resume-button-2' href="/downloads/Shivkant_Dubey_Resume.pdf" download={'Shivkant_Dubey_Resume'} target={'_blank'}><Button mt={20} gap={'5px'}> <ImDownload/> Resume </Button></a>
 		</div>
 		<Grid w={'50%'} mt={'0px'} className={styles.aboutmetext} >
       <Text display={'flex'} gap='5px' fontSize={'6xl'} fontWeight={'500'}>Hi, <span id={styles.hand}>🤚</span> I'm</Text><Text
@@ -53,9 +53,9 @@ const AboutMe = () => {
 			</Text>
       <HStack spacing={'24'} ml={'30px'}>
         <Link id='contact-github' href='https://github.com/skd0394' alt={'git_hub'} isExternal><Icon as={FaGithub} boxSize='50'  /></Link>
-        <Link id='contact-linkedin' href='https://www.instagram.com/sh_iv6317/' alt={'git_hub'} isExternal><Icon as={FaInstagram} boxSize='50'  /></Link>
-        <Link id='contact-phone' href='https://www.linkedin.com/in/shiv-kant-dubey-94334b245/' alt={'git_hub'} isExternal><Icon as={FaLinkedinIn} boxSize='50'  /></Link>
-        <Link id='contact-email' href='https://github.com/skd0394' alt={'git_hub'} isExternal><Icon as={MdDocumentScanner} boxSize='50'  /></Link>
+        <Link id='contact-linkedin' href='https://www.linkedin.com/in/shiv-kant-dubey-94334b245/' alt={'git_hub'} isExternal><Icon as={FaLinkedinIn} boxSize='50'  /></Link>
+        <Link id='contact-Insta' href='https://www.instagram.com/sh_iv6317/' alt={'git_hub'} isExternal><Icon as={FaInstagram} boxSize='50'  /></Link>
+        <Link id='contact-email' href='https://github.com/skd0394' alt={'git_hub'} isExternal ><Icon as={MdDocumentScanner} boxSize='50'  /></Link>
       </HStack>
     </Grid> 
 	</Flex>
