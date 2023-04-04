@@ -1,8 +1,20 @@
 import React from 'react'
+import Navbar from '../../Navbar/Navbar'
+import AboutMe from './AboutMe'
+import GitStatics from './GitStatics'
+import Projects from './Projects'
+import Skills from './Skills'
+import '../../global.css'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div id={'home'}>
+      <Navbar/>
+      <AboutMe/>
+      <GitStatics/>
+      <Skills/>
+      <Projects/>
+    </div>
   )
 }
 

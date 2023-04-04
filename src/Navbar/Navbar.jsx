@@ -20,11 +20,11 @@ const Navbar = () => {
          <div id="name">Shivkant Dubey</div>
         <div className="options">
         
-        <div className="nav-link home"><NavLink to="/"><HiHome/>Home</NavLink></div>
+        <div className="nav-link home"><NavLink to="#home"><HiHome/>Home</NavLink></div>
         <div className="nav-link about"><NavLink to="#about"><FcAbout />About Me</NavLink></div>
         <div className="nav-link skills"><NavLink to="#skills"><GiSkills />Skills</NavLink></div>
         <div className="nav-link projects"><NavLink to="#projects"><SiCodeproject />Projects</NavLink></div>
-        <div className="nav-link contact"><NavLink to="/contacts"><RiContactsFill />Contacts</NavLink></div>
+        <div className="nav-link contact"><NavLink to="#contact"><RiContactsFill />Contacts</NavLink></div>
        <a href="/downloads/Shivkant_Dubey_Resume.pdf" download={'Shivkant_Dubey_Resume'} target={'_blank'}> <div className="nav-link resume"><ImDownload/>Resume</div></a>
         </div>
         <div id="ham_icon">

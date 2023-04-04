@@ -1,5 +1,6 @@
 import { Box, Divider, Flex, Grid, Heading, Image, Spacer, Text } from '@chakra-ui/react'
 import React from 'react'
+import Tools from './Tools'
 
 const Skills = () => {
   return (
@@ -19,7 +20,13 @@ const Skills = () => {
             <Grid><Image w={'100px'} h='100px' src='https://img.icons8.com/color/256/redux.png' alt='redux' /><Text fontSize={'medium'} fontWeight={'bold '} >Redux</Text></Grid>
             <Grid><Image w={'100px'} h='100px' src='https://static-00.iconduck.com/assets.00/next-js-icon-256x256-6j7ddke7.png' alt='redux' /><Text fontSize={'medium'} fontWeight={'bold '} >Next.js</Text></Grid>
           </Flex>
+          <Flex m={'auto'} gap={'8px'}>
+          <Grid><Image w={'100px'} h='100px' src='https://img.icons8.com/color/256/nodejs.png' alt='css' /><Text fontSize={'medium'} fontWeight={'bold '} >Node.js</Text></Grid>
+          <Grid><Image w={'100px'} h='100px' src='https://img.icons8.com/officel/256/express-js.png' alt='css' /><Text fontSize={'medium'} fontWeight={'bold '} >Express.js</Text></Grid>
+          <Grid><Image w={'100px'} h='100px' src='https://img.icons8.com/color/256/mongodb.png' alt='css' /><Text fontSize={'medium'} fontWeight={'bold '} >MongoDB</Text></Grid>
+          </Flex>
         </Grid>
+        <Tools/>
     </>
   )
 }

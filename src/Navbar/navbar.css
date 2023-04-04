@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-around;
     border-radius: 30px;
+    width: auto;
     /* background-image :url('https://vedabase.io/static/img/header-bg.jpg'); */
     height: 75px;
     align-items: center;
@@ -28,19 +29,22 @@
 
 
 @media screen and (max-width: 900px) {
+    .navbar{
+        width: auto;
+    }
     .options{
         display: none;
     }
-    #name{
+    /* #name{
         margin-right: 70%;   
-    }
+    } */
     #ham_icon{
         display:contents;
     }
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .options{
         display: none;
     }
