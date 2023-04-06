@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.072b819b.css",
-    "main.js": "/static/js/main.1a2274d4.js",
+    "main.js": "/static/js/main.180b0e17.js",
+    "static/media/Shivkant_Dubey_Resume.pdf": "/static/media/Shivkant_Dubey_Resume.0d479a561fa89ecf9ccc.pdf",
     "index.html": "/index.html",
     "main.072b819b.css.map": "/static/css/main.072b819b.css.map",
-    "main.1a2274d4.js.map": "/static/js/main.1a2274d4.js.map"
+    "main.180b0e17.js.map": "/static/js/main.180b0e17.js.map"
   },
   "entrypoints": [
     "static/css/main.072b819b.css",
-    "static/js/main.1a2274d4.js"
+    "static/js/main.180b0e17.js"
   ]
 }
