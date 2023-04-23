@@ -12,14 +12,14 @@ const GitStatics = () => {
         <Heading textAlign={'center'} m={'80px auto 50px auto'}>My Statistics</Heading>   
         <Flex flexDir={'column'} gap={'40px'} alignItems={'center'} >
                 <Box ml={'400px'} className={'gitStats'}>
-                    <Image src='https://github-readme-stats.vercel.app/api/top-langs?username=skd0394&show_icons=true&locale=en&layout=compact' alt='localstats'/>
+                    <Image id='github-stats-card' src='https://github-readme-stats.vercel.app/api/top-langs?username=skd0394&show_icons=true&locale=en&layout=compact' alt='localstats'/>
                 </Box>
                 
-                <Box id='github-streak-stats' ml={'400px'}>
-                    <Image src='https://github-readme-streak-stats.herokuapp.com/?user=skd0394&' alt='localstats'/>
+                <Box  ml={'400px'}>
+                    <Image id='github-streak-stats' src='https://github-readme-streak-stats.herokuapp.com/?user=skd0394&' alt='localstats'/>
                 </Box>
-                <Box id='github-top-langs' mr={'400px'}  >
-                    <Image src='https://github-readme-stats.vercel.app/api/top-langs/?username=skd0394&layout=compact' alt='localstats'/>
+                <Box  mr={'400px'}  >
+                    <Image id='github-top-langs' src='https://github-readme-stats.vercel.app/api/top-langs/?username=skd0394&layout=compact' alt='localstats'/>
                 </Box>
         </Flex>
         <Flex m={'50px auto 40px auto'} flexDir={'column'} alignItems={'center'} gap={'40px'}>

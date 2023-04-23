@@ -1,8 +1,9 @@
 import "./navbar.css";
 import {HamburgerIcon} from '@chakra-ui/icons'
 import React from 'react'
+import Resume from "../downloads/Shivkant_Dubey_Resume.pdf"
 // import {NavLink} from "react-router-dom"
-import { Menu,MenuButton,MenuList,MenuItem,IconButton, Flex } from "@chakra-ui/react";
+import { Menu,MenuButton,MenuList,MenuItem,IconButton, Flex,Link } from "@chakra-ui/react";
 import {FcAbout} from 'react-icons/fc'
 import {GiSkills} from "react-icons/gi"
 import {SiCodeproject} from "react-icons/si"
@@ -25,7 +26,13 @@ const Navbar = () => {
         <div className="nav-link skills"><NavLink to="#skills"><GiSkills />Skills</NavLink></div>
         <div className="nav-link projects"><NavLink to="#projects"><SiCodeproject />Projects</NavLink></div>
         <div className="nav-link contact"><NavLink to="#contact"><RiContactsFill />Contacts</NavLink></div>
-       <a href="/downloads/Shivkant_Dubey_Resume.pdf" download={'Shivkant_Dubey_Resume'} target={'_blank'}> <div className="nav-link resume"><ImDownload/>Resume</div></a>
+        {/* <div className="nav-link resume"><NavLink to="#resume-button-1"><RiContactsFill />Resume</NavLink></div> */}
+        <div id={'resume-button-1'} onClick={() => {
+                  window.open(
+                    "https://drive.google.com/file/d/1ZyUe0UDSKxo0WXzXVZuukbo6AhBJptXD/view?usp=share_link"
+                  );
+                }} className="nav-link resume"><a id='resume-link-1'  href={Resume} download={'Shivkant_Dubey_Resume'}><ImDownload/>Resume</a></div>
+        {/* <Resume/> */}
         </div>
         <div id="ham_icon">
         <Menu>
@@ -48,7 +55,7 @@ const Navbar = () => {
                 <NavLink to="/contacts"><MenuItem icon={<RiContactsFill />}>
                     Contacts
                 </MenuItem></NavLink>
-                <a href="/downloads/Shivkant_Dubey_Resume.pdf" download={'Shivkant_Dubey_Resume'} target={'_top'}><MenuItem icon={<ImDownload/>}>
+                <a href={Resume} download={'Shivkant_Dubey_Resume'} ><MenuItem icon={<ImDownload/>}>
                     Resume
                 </MenuItem></a>
             </MenuList>

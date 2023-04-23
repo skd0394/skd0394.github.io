@@ -19,7 +19,7 @@ const Contacts = () => {
                   </Flex>
                   <Flex flexDir={'column'} gap={'5px'} >
                       <Link href='*'>
-                        <Flex gap="5px" >
+                        <Flex id='contact-email' gap="5px"  >
                           <MdEmail/>
                           <Text>shivkd1908@gmail.com</Text>
                         </Flex>
@@ -36,7 +36,7 @@ const Contacts = () => {
                           <Text>GitHub</Text>
                         </Flex>
                       </Link>
-                      <Flex gap="5px">
+                      <Flex gap="5px" id='contact-phone' >
                         <BsFillTelephoneFill/>
                         <Text>+91 8542000179</Text>
                       </Flex>

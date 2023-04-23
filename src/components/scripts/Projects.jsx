@@ -7,12 +7,12 @@ const Projects = () => {
         <Divider orientation='horizontal' mb={'100px'}/>
          <Flex id='projects' flexDir={'column'}  alignItems={'center'} w={'80%'} m={'auto'} mb={'100px'}>
           <Heading mb={'100px'}>Featured Projects</Heading>
-              <Flex gap={'20px'}  m={'auto'}>
+              <Flex gap={'20px'}  m={'auto'} className='project-card' >
                   <Image h={'300px'} w={'800px'} src='https://i.ibb.co/kgF231Z/Screenshot-20230122-164229.png' alt=''/>
                   <Flex flexDir={'column'} mt={'-20px'}>
-                      <Text fontSize={'2xl'} fontWeight={'medium'}>Apple Clone</Text>
-                      <Text>Apple, Inc. engages in the design, manufacture, and sale of smartphones, personal computers, tablets, wearables and accessories, and other variety of related services.</Text>
-                      <Flex flexDir={'column'}>
+                      <Text className="project-title" fontSize={'2xl'} fontWeight={'medium'}>Apple Clone</Text>
+                      <Text className="project-description">Apple, Inc. engages in the design, manufacture, and sale of smartphones, personal computers, tablets, wearables and accessories, and other variety of related services.</Text>
+                      <Flex className='project-tech-stack' flexDir={'column'}>
                       <Flex flexDir={'column'}>
                         <Text fontSize={'medium'} fontWeight={'medium'}> FrontEnd Tech Stacks</Text>
                         <Flex gap={'15px'}>
@@ -30,18 +30,18 @@ const Projects = () => {
                       </Flex>
                       </Flex>
                       <Flex gap={'10px'} pt={'20px'} m={'auto'}>
-                      <Link href='https://blueapple.vercel.app/' isExternal ><Button h={'40px'}>Check it Out!</Button></Link>
-                      <Link href='https://github.com/skd0394/Apple-Clone' isExternal><Button h={'40px'}>Code Base</Button></Link>
+                      <Link className='project-deployed-link' href='https://blueapple.vercel.app/' isExternal ><Button h={'40px'}>Check it Out!</Button></Link>
+                      <Link className='project-github-link' href='https://github.com/skd0394/Apple-Clone' isExternal><Button h={'40px'}>Code Base</Button></Link>
                       </Flex>
                   </Flex>
               </Flex>
 
               {/* 2nd project */}
-              <Flex gap={'20px'} mt={'70px'}>
+              <Flex gap={'20px'} mt={'70px'} className='project-card'>
               <Flex flexDir={'column'} ml={'10px'}>
-                      <Text fontSize={'2xl'} fontWeight={'medium'}>BlueMercury Clone</Text>
-                      <Text>Bluemercury is a skincare product Ecommerce website which gives you wide varieties of branded skincare , makeup care and many more products.</Text>
-                      <Flex flexDir={'column'}>
+                      <Text className="project-title" fontSize={'2xl'} fontWeight={'medium'}>BlueMercury Clone</Text>
+                      <Text className="project-description">Bluemercury is a skincare product Ecommerce website which gives you wide varieties of branded skincare , makeup care and many more products.</Text>
+                      <Flex className='project-tech-stack' flexDir={'column'}>
                       <Flex flexDir={'column'}>
                         <Text fontSize={'medium'} fontWeight={'medium'}> FrontEnd Tech Stacks</Text>
                         <Flex gap={'5px'}>
@@ -58,8 +58,8 @@ const Projects = () => {
                       </Flex>
                       </Flex>
                       <Flex gap={'10px'} mt={'20px'} m={'auto'}>
-                      <Link href='https://monumental-cassata-c694c6.netlify.app/' isExternal><Button h={'40px'}>Check it Out!</Button></Link>
-                      <Link href='https://github.com/skd0394/Bluemercury.com' isExternal><Button h={'40px'}>Code Base</Button></Link>
+                      <Link className='project-deployed-link' href='https://monumental-cassata-c694c6.netlify.app/' isExternal><Button h={'40px'}>Check it Out!</Button></Link>
+                      <Link className='project-github-link' href='https://github.com/skd0394/Bluemercury.com' isExternal><Button h={'40px'}>Code Base</Button></Link>
                       </Flex>
                   </Flex>
                   <Image h={'300px'} w={'800px'} src='https://user-images.githubusercontent.com/105901300/213781027-096ba501-b793-4774-98e4-535036182944.png' alt=''/>
@@ -67,12 +67,12 @@ const Projects = () => {
 
               {/* 3rd project */}
 
-              <Flex gap={'20px'} mt={'80px'}>
+              <Flex gap={'20px'} mt={'80px'} className='project-card'>
                   <Image h={'300px'} w={'800px'} src='https://i.ibb.co/9cSfCRj/2023-02-21.png' alt=''/>
                   <Flex flexDir={'column'} mt={'-20px'}>
-                      <Text fontSize={'2xl'} fontWeight={'medium'}>Airtable Clone</Text>
-                      <Text>This is a group project, Airtable is a low-code platform for building collaborative apps. Customize your workflow, collaborate, and achieve goals</Text>
-                      <Flex flexDir={'column'}>
+                      <Text className="project-title" fontSize={'2xl'} fontWeight={'medium'}>Airtable Clone</Text>
+                      <Text className="project-description">This is a group project, Airtable is a low-code platform for building collaborative apps. Customize your workflow, collaborate, and achieve goals</Text>
+                      <Flex className='project-tech-stack' flexDir={'column'}>
                       <Flex flexDir={'column'}>
                         <Text fontSize={'medium'} fontWeight={'medium'}> FrontEnd Tech Stacks</Text>
                         <Flex gap={'5px'}>
@@ -89,18 +89,18 @@ const Projects = () => {
                       </Flex>
                       </Flex>
                       <Flex gap={'10px'} mt={'20px'} m={'auto'}>
-                      <Link href='https://airtable.indspunk.com/' isExternal><Button h={'40px'}>Check it Out!</Button></Link>
-                      <Link href='https://github.com/skd0394/Airtable-Clone' isExternal><Button h={'40px'}>Code Base</Button></Link>
+                      <Link className='project-deployed-link' href='https://airtable.indspunk.com/' isExternal><Button h={'40px'}>Check it Out!</Button></Link>
+                      <Link className='project-github-link' href='https://github.com/skd0394/Airtable-Clone' isExternal><Button h={'40px'}>Code Base</Button></Link>
                       </Flex>
                   </Flex>
               </Flex>
 
               {/* 4th project */}
-              <Flex gap={'20px'} mt={'70px'}>
+              <Flex gap={'20px'} mt={'70px'} className='project-card'>
               <Flex flexDir={'column'} ml={'10px'}>
-                      <Text fontSize={'2xl'} fontWeight={'medium'}>BlueMercury Clone</Text>
-                      <Text>Bluemercury is a skincare product Ecommerce website which gives you wide varieties of branded skincare , makeup care and many more products.</Text>
-                      <Flex flexDir={'column'}>
+                      <Text  className="project-title" fontSize={'2xl'} fontWeight={'medium'}>BlueMercury Clone</Text>
+                      <Text className="project-description">Bluemercury is a skincare product Ecommerce website which gives you wide varieties of branded skincare , makeup care and many more products.</Text>
+                      <Flex className='project-tech-stack' flexDir={'column'}>
                       <Flex flexDir={'column'}>
                         <Text fontSize={'medium'} fontWeight={'medium'}> FrontEnd Tech Stacks</Text>
                         <Flex gap={'5px'}>
@@ -117,8 +117,8 @@ const Projects = () => {
                       </Flex>
                       </Flex>
                       <Flex gap={'10px'} mt={'20px'} m={'auto'}>
-                      <Link href='https://monumental-cassata-c694c6.netlify.app/' isExternal><Button h={'40px'}>Check it Out!</Button></Link>
-                      <Link href='https://github.com/skd0394/Bluemercury.com' isExternal><Button h={'40px'}>Code Base</Button></Link>
+                      <Link className='project-deployed-link' href='https://monumental-cassata-c694c6.netlify.app/' isExternal><Button h={'40px'}>Check it Out!</Button></Link>
+                      <Link className="project-github-link" href='https://github.com/skd0394/Bluemercury.com' isExternal><Button h={'40px'}>Code Base</Button></Link>
                       </Flex>
                   </Flex>
                   <Image h={'300px'} w={'800px'} src='https://user-images.githubusercontent.com/105901300/213781027-096ba501-b793-4774-98e4-535036182944.png' alt=''/>
