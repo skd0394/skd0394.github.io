@@ -22,7 +22,7 @@ const AboutMe = () => {
       <a id={'resume-button-2'} href={Resume} download={'Shivkant_Dubey_Resume'}>
       <Button w='130px' gap='5px' onClick={() => {
                   window.open(
-                    "https://drive.google.com/file/d/1ZyUe0UDSKxo0WXzXVZuukbo6AhBJptXD/view?usp=share_link"
+                    "https://drive.google.com/file/d/1-mavXJADg6YAZ238dOZnevFlbx6RsWay/view?usp=share_link"
                   );
                 }}><ImDownload/>Resume
       </Button>

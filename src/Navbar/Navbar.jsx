@@ -29,7 +29,7 @@ const Navbar = () => {
         {/* <div className="nav-link resume"><NavLink to="#resume-button-1"><RiContactsFill />Resume</NavLink></div> */}
         <div id={'resume-button-1'} onClick={() => {
                   window.open(
-                    "https://drive.google.com/file/d/1ZyUe0UDSKxo0WXzXVZuukbo6AhBJptXD/view?usp=share_link"
+                    "https://drive.google.com/file/d/1-mavXJADg6YAZ238dOZnevFlbx6RsWay/view?usp=share_link"
                   );
                 }} className="nav-link resume"><a id='resume-link-1'  href={Resume} download={'Shivkant_Dubey_Resume'}><ImDownload/>Resume</a></div>
         {/* <Resume/> */}
