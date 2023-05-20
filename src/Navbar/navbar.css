@@ -1,6 +1,6 @@
 .navbar{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     border-radius: 30px;
     width: auto;
     /* background-image :url('https://vedabase.io/static/img/header-bg.jpg'); */
@@ -12,8 +12,10 @@
     position: sticky;
     top: 0;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    width: 100%;
 }
 .navbar div:nth-child(1){
+    margin-left: 10px;
     font-size: larger;
 }
 
@@ -29,17 +31,15 @@
 
 
 @media screen and (max-width: 900px) {
-    .navbar{
-        width: auto;
-    }
     .options{
         display: none;
     }
-    /* #name{
-        margin-right: 70%;   
-    } */
     #ham_icon{
+        margin-right: 20px;
         display:contents;
+    }
+    #theme{
+        display:none
     }
 
 }
@@ -47,12 +47,12 @@
 @media screen and (max-width: 600px) {
     .options{
         display: none;
-    }
-    #name{
-        margin-right: 50%;   
+        width: 0px;
     }
     #ham_icon{
         display:contents;
     }
-
+    #theme{
+        display:none
+    }
 }

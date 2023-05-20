@@ -1,9 +1,9 @@
 import "./navbar.css";
 import {HamburgerIcon} from '@chakra-ui/icons'
 import React from 'react'
-import Resume from "../downloads/Shivkant_Dubey_Resume.pdf"
+import Resume from "../downloads/Shivkant-Dubey-Resume.pdf"
 // import {NavLink} from "react-router-dom"
-import { Menu,MenuButton,MenuList,MenuItem,IconButton, Flex,Link } from "@chakra-ui/react";
+import { Menu,MenuButton,MenuList,MenuItem,IconButton, Flex,Link ,Box} from "@chakra-ui/react";
 import {FcAbout} from 'react-icons/fc'
 import {GiSkills} from "react-icons/gi"
 import {SiCodeproject} from "react-icons/si"
@@ -17,9 +17,9 @@ import ThemeToggler from "../components/ThemeToggler";
 
 const Navbar = () => {
   return (
-    <Flex bgColor={'gray.400'} className="navbar" id={'nav-menu'}>
-         <div id="name">Shivkant Dubey</div>
-        <div className="options">
+    <Flex bgColor={'gray.400'} className="navbar" id={'nav-menu'} justifyContent={'space-between'} >
+        <Box id="name">Shivkant Dubey</Box>
+        <Box className="options">
         
         <div className="nav-link home"><NavLink to="#home"><HiHome/>Home</NavLink></div>
         <div className="nav-link about"><NavLink to="#about"><FcAbout />About Me</NavLink></div>
@@ -32,9 +32,10 @@ const Navbar = () => {
                     "https://drive.google.com/file/d/1-mavXJADg6YAZ238dOZnevFlbx6RsWay/view?usp=share_link"
                   );
                 }} className="nav-link resume"><a id='resume-link-1'  href={Resume} download={'Shivkant_Dubey_Resume'}><ImDownload/>Resume</a></div>
+        
         {/* <Resume/> */}
-        </div>
-        <div id="ham_icon">
+        </Box>
+        <Box id="ham_icon" >
         <Menu>
                 <MenuButton
                 as={IconButton}
@@ -43,7 +44,10 @@ const Navbar = () => {
                 variant='outline'
             />
             <MenuList>
-            <NavLink to="#aboutme"><MenuItem icon={<FcAbout />} >
+              <MenuItem icon={<ThemeToggler/>}>
+
+              </MenuItem>
+              <NavLink to="#aboutme"><MenuItem icon={<FcAbout />} >
                     About Me
                 </MenuItem></NavLink>
                 <NavLink to="#skills"> <MenuItem icon={<GiSkills />}>
@@ -59,10 +63,11 @@ const Navbar = () => {
                     Resume
                 </MenuItem></a>
             </MenuList>
-        </Menu>
-            
-        </div>
-        <ThemeToggler/>
+        </Menu>    
+        </Box>
+        <Box id='theme'>
+          <ThemeToggler/>
+        </Box>
     </Flex>
   )
 }
