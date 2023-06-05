@@ -7,7 +7,7 @@ const Projects = () => {
         <Divider orientation='horizontal' mb={'100px'}/>
          <Flex id='projects' flexDir={'column'}  alignItems={'center'} w={'80%'} m={'auto'} mb={'100px'}>
           <Heading mb={'100px'}>Featured Projects</Heading>
-              <Flex gap={'20px'}  m={'auto'} className='project-card' >
+              <Flex gap={'20px'}  m={'auto'} className='project-card' display={['grid','grid','flex','flex']} >
                   <Image h={'300px'} w={'800px'} src='https://i.ibb.co/kgF231Z/Screenshot-20230122-164229.png' alt=''/>
                   <Flex flexDir={'column'} mt={'-20px'}>
                       <Text className="project-title" fontSize={'2xl'} fontWeight={'medium'}>Apple Clone</Text>
@@ -37,7 +37,7 @@ const Projects = () => {
               </Flex>
 
               {/* 2nd project */}
-              <Flex gap={'20px'} mt={'70px'} className='project-card'>
+              <Flex gap={'20px'} mt={'70px'} className='project-card' display={'flex'} flexDir={['column-reverse','column-reverse','column-reverse','row']} >
               <Flex flexDir={'column'} ml={'10px'}>
                       <Text className="project-title" fontSize={'2xl'} fontWeight={'medium'}>BlueMercury Clone</Text>
                       <Text className="project-description">Bluemercury is a skincare product Ecommerce website which gives you wide varieties of branded skincare , makeup care and many more products.</Text>
@@ -67,7 +67,7 @@ const Projects = () => {
 
               {/* 3rd project */}
 
-              <Flex gap={'20px'} mt={'80px'} className='project-card'>
+              <Flex gap={'20px'} mt={'80px'} className='project-card' display={['grid','grid','flex','flex']}>
                   <Image h={'300px'} w={'800px'} src='https://i.ibb.co/9cSfCRj/2023-02-21.png' alt=''/>
                   <Flex flexDir={'column'} mt={'-20px'}>
                       <Text className="project-title" fontSize={'2xl'} fontWeight={'medium'}>Airtable Clone</Text>
@@ -96,17 +96,17 @@ const Projects = () => {
               </Flex>
 
               {/* 4th project */}
-              <Flex gap={'20px'} mt={'70px'} className='project-card'>
+              <Flex gap={'20px'} mt={'70px'} className='project-card' display={'flex'} flexDir={['column-reverse','column-reverse','column-reverse','row']}>
               <Flex flexDir={'column'} ml={'10px'}>
-                      <Text  className="project-title" fontSize={'2xl'} fontWeight={'medium'}>BlueMercury Clone</Text>
-                      <Text className="project-description">Bluemercury is a skincare product Ecommerce website which gives you wide varieties of branded skincare , makeup care and many more products.</Text>
+                      <Text  className="project-title" fontSize={'2xl'} fontWeight={'medium'}>Anthropologie - Clone</Text>
+                      <Text className="project-description">Anthropologie engages in the unique collection of women's clothing, accessories, home décor, furniture, gifts and more</Text>
                       <Flex className='project-tech-stack' flexDir={'column'}>
                       <Flex flexDir={'column'}>
                         <Text fontSize={'medium'} fontWeight={'medium'}> FrontEnd Tech Stacks</Text>
                         <Flex gap={'5px'}>
-                        <Image h={'40px'} w={'40px'} src='https://img.icons8.com/arcade/256/javascript.png' alt='JS'/>
-                        <Image h={'40px'} w={'40px'} src='https://img.icons8.com/stickers/256/css3.png' alt='css'/>
-                        <Image h={'40px'} w={'4 0px'} src='https://img.icons8.com/color/256/html-5.png' alt='HTML'/>
+                        <Image h={'40px'} w={'40px'} src='https://static-00.iconduck.com/assets.00/next-js-icon-256x256-6j7ddke7.png' alt='JS'/>
+                        <Image h={'40px'} w={'40px'} src='https://img.icons8.com/bubbles/256/react.png' alt='css'/>
+                        <Image h={'40px'} w={'40px'} src='https://w7.pngwing.com/pngs/246/288/png-transparent-firebase-hd-logo-thumbnail.png' alt='HTML'/>
                         </Flex>
                       </Flex>
                       <Flex flexDir={'column'}>
@@ -117,11 +117,11 @@ const Projects = () => {
                       </Flex>
                       </Flex>
                       <Flex gap={'10px'} mt={'20px'} m={'auto'}>
-                      <Link className='project-deployed-link' href='https://monumental-cassata-c694c6.netlify.app/' isExternal><Button h={'40px'}>Check it Out!</Button></Link>
-                      <Link className="project-github-link" href='https://github.com/skd0394/Bluemercury.com' isExternal><Button h={'40px'}>Code Base</Button></Link>
+                      <Link className='project-deployed-link' href='https://unit-5-frontend-deployement.netlify.app/' isExternal><Button h={'40px'}>Check it Out!</Button></Link>
+                      <Link className="project-github-link" href='https://github.com/ParbhatKataria1/Sunglow-Fashion' isExternal><Button h={'40px'}>Code Base</Button></Link>
                       </Flex>
                   </Flex>
-                  <Image h={'300px'} w={'800px'} src='https://user-images.githubusercontent.com/105901300/213781027-096ba501-b793-4774-98e4-535036182944.png' alt=''/>
+                  <Image h={'300px'} w={'800px'} src='https://camo.githubusercontent.com/beeabbb09ab80a37005cc2cf6f2d82ea07b2ceb69fe6aaed527d4094c7151453/68747470733a2f2f7777772e6c696e6b706963747572652e636f6d2f712f7765622d636170747572652e706e67' alt=''/>
               </Flex>
               
         </Flex> 

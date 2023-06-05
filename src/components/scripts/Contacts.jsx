@@ -20,7 +20,7 @@ const Contacts = () => {
                   <Flex flexDir={'column'} gap={'5px'} >
                       <Link href='*'>
                         <Flex id='contact-email' gap="5px"  >
-                          <MdEmail/>
+                          <Link href='mailto: shivkd1908@gmail.com'><MdEmail/></Link>
                           <Text>shivkd1908@gmail.com</Text>
                         </Flex>
                       </Link>
