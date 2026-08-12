@@ -8,7 +8,7 @@ import Contacts from "./Contacts"
 
 const Home = () => {
   return (
-    <div id={'home'}>
+    <div>
       <Navbar/>
       <AboutMe/>
       <GitStatics/>

@@ -89,7 +89,7 @@ const Projects = () => {
                       </Flex>
                       </Flex>
                       <Flex gap={'10px'} mt={'20px'} m={'auto'}>
-                      <Link className='project-deployed-link' href='https://airtable.indspunk.com/' isExternal><Button h={'40px'}>Check it Out!</Button></Link>
+                      <Link className='project-deployed-link' href='https://zingy-khapse-a78b05.netlify.app/' isExternal><Button h={'40px'}>Check it Out!</Button></Link>
                       <Link className='project-github-link' href='https://github.com/skd0394/Airtable-Clone' isExternal><Button h={'40px'}>Code Base</Button></Link>
                       </Flex>
                   </Flex>

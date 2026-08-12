@@ -11,10 +11,7 @@ const AboutMe = () => {
 
   return (
     <>
-    <Box id='about' m='80px auto 40px auto'>
-      <Box textAlign='center' mb={'40px'}>
-        <Heading>About Me</Heading>
-      </Box>
+    <Box id='home' m='80px auto 40px auto'>
     <Flex w='90%' display={['grid','grid','flex','flex']} justifyContent={['center','center','space-evenly','space-evenly']} gap={["10px","10px","0px","0px"]} m={["auto","auto","auto","auto"]}>
 			<Flex flexDir={'column'} w={['40%','35%','30%','22%']} alignItems={'center'} justifyContent={'space-around'} m={['auto','auto','auto','auto']}> 
 				<Image w={'100%'}  borderRadius={'50%'} className='home-img' mb={'40px'} src="https://avatars.githubusercontent.com/u/107461174?s=400&u=c8072d4e15a3869a29398b63a6e3be5b5f3edb40&v=4" alt='profile_pic'/>
@@ -71,6 +68,21 @@ const AboutMe = () => {
       </HStack>
     </Grid> 
 	</Flex>
+  </Box>
+  <Divider mt={'50px'} />
+  <Box id='about' m='80px auto 40px auto' w={['90%','85%','70%','60%']} textAlign={'center'}>
+    <Heading mb={'30px'}>About Me</Heading>
+    <Text fontSize={['x-small','small','normal','medium']} textAlign="justify">
+      Beyond the code, I'm someone who likes figuring out how things fit together —
+      untangling a gnarly bug, learning a new framework by breaking it first, or turning
+      a rough idea into something people can actually click through. I care as much about
+      how an app feels to use as I do about what's happening under the hood.
+    </Text>
+    <Text fontSize={['x-small','small','normal','medium']} textAlign="justify" mt={'20px'}>
+      I'm always experimenting — this portfolio itself is usually where I try out whatever
+      I've picked up most recently. When I'm not building, I'm probably reading through
+      someone else's code on GitHub to see how they solved a problem I'm stuck on.
+    </Text>
   </Box>
   <Divider mt={'50px'} />
   </>
