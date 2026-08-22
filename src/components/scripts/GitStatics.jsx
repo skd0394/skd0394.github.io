@@ -11,15 +11,8 @@ const GitStatics = () => {
     <>
         <Heading textAlign={'center'} m={'80px auto 50px auto'}>My Statistics</Heading>   
         <Flex flexDir={'column'} gap={'40px'} alignItems={'center'} padding={["20px",'20px','30px','30px']} >
-                <Box className={'gitStats'}>
-                    <Image borderRadius={'7%'} id='github-stats-card' src='https://github-readme-stats.vercel.app/api/top-langs?username=skd0394&show_icons=true&locale=en&layout=compact' alt='localstats'/>
-                </Box>
-                
                 <Box>
-                    <Image borderRadius={'7%'}  id='github-streak-stats' src='https://github-readme-streak-stats.herokuapp.com/?user=skd0394&' alt='localstats'/>
-                </Box>
-                <Box >
-                    <Image borderRadius={'7%'}  id='github-top-langs' src='https://github-readme-stats.vercel.app/api?username=skd0394&show_icons=true&theme=tokyonight' alt='localstats'/>
+                    <Image borderRadius={'7%'}  id='github-streak-stats' src='https://streak-stats.demolab.com/?user=skd0394&' alt='github streak stats'/>
                 </Box>
         </Flex>
         <Flex m={'50px auto 40px auto'} flexDir={'column'} alignItems={'center'} gap={'40px'} >

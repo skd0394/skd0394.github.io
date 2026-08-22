@@ -1,5 +1,6 @@
 import { Box, Button, Divider, Flex, Grid, Heading, Image, Link, Spacer, Text } from '@chakra-ui/react'
 import React from 'react'
+import AnthropologieCloneScreenshot from "../../assets/projects/anthropologie-clone.jpg"
 
 const Projects = () => {
   return (
@@ -16,7 +17,7 @@ const Projects = () => {
                       <Flex flexDir={'column'}>
                         <Text fontSize={'medium'} fontWeight={'medium'}> FrontEnd Tech Stacks</Text>
                         <Flex gap={'15px'}>
-                        <Image h={'40px'} w={'40px'} src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png' alt='React'/>     
+                        <Image h={'40px'} w={'40px'} src='https://img.icons8.com/color/256/react-native.png' alt='React'/>
                         <Image h={'40px'} w={'40px'} src='https://img.icons8.com/color/256/redux.png' alt='redux'/>
                         </Flex>
                       </Flex>
@@ -104,7 +105,7 @@ const Projects = () => {
                       <Flex flexDir={'column'}>
                         <Text fontSize={'medium'} fontWeight={'medium'}> FrontEnd Tech Stacks</Text>
                         <Flex gap={'5px'}>
-                        <Image h={'40px'} w={'40px'} src='https://static-00.iconduck.com/assets.00/next-js-icon-256x256-6j7ddke7.png' alt='JS'/>
+                        <Image h={'40px'} w={'40px'} src='https://img.icons8.com/color/256/nextjs.png' alt='Next.js'/>
                         <Image h={'40px'} w={'40px'} src='https://img.icons8.com/bubbles/256/react.png' alt='css'/>
                         <Image h={'40px'} w={'40px'} src='https://w7.pngwing.com/pngs/246/288/png-transparent-firebase-hd-logo-thumbnail.png' alt='HTML'/>
                         </Flex>
@@ -121,7 +122,7 @@ const Projects = () => {
                       <Link className="project-github-link" href='https://github.com/ParbhatKataria1/Sunglow-Fashion' isExternal><Button h={'40px'}>Code Base</Button></Link>
                       </Flex>
                   </Flex>
-                  <Image h={'300px'} w={'800px'} src='https://camo.githubusercontent.com/beeabbb09ab80a37005cc2cf6f2d82ea07b2ceb69fe6aaed527d4094c7151453/68747470733a2f2f7777772e6c696e6b706963747572652e636f6d2f712f7765622d636170747572652e706e67' alt=''/>
+                  <Image h={'300px'} w={'800px'} src={AnthropologieCloneScreenshot} alt='Anthropologie clone homepage'/>
               </Flex>
               
         </Flex> 
