@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text,Box, Flex, HStack,Icon, Link, Divider, Grid, Spacer, Heading, Button, Image } from '@chakra-ui/react';
+import { Text,Box, Flex, HStack,Icon, Link, Divider, Grid, Spacer, Heading, Button, Image, useColorModeValue } from '@chakra-ui/react';
 import Resume from "../../downloads/Shivkant-Dubey-Resume.pdf"
 import styles from  "../styles/aboutme.module.css"
 import {FaGithub,FaGoogle,FaInstagram,FaLinkedinIn} from "react-icons/fa"
@@ -8,6 +8,9 @@ import {MdDocumentScanner} from "react-icons/md"
 import {ImDownload} from "react-icons/im"
 
 const AboutMe = () => {
+  const aboutBg = useColorModeValue('gray.50', 'gray.700')
+  const aboutShadow = useColorModeValue('md', 'dark-lg')
+  const accentColor = useColorModeValue('#7928CA', '#FF0080')
 
   return (
     <>
@@ -69,9 +72,18 @@ const AboutMe = () => {
     </Grid> 
 	</Flex>
   </Box>
-  <Divider mt={'50px'} />
-  <Box id='about' m='80px auto 40px auto' w={['90%','85%','70%','60%']} textAlign={'center'}>
-    <Heading mb={'30px'}>About Me</Heading>
+  <Box
+    id='about'
+    bg={aboutBg}
+    boxShadow={aboutShadow}
+    borderRadius={'2xl'}
+    m={'120px auto 100px auto'}
+    p={['30px','40px','50px','60px']}
+    w={['90%','85%','70%','60%']}
+    textAlign={'center'}
+  >
+    <Heading mb={'10px'}>About Me</Heading>
+    <Box w={'60px'} h={'4px'} bg={accentColor} borderRadius={'full'} m={'0 auto 30px auto'} />
     <Text fontSize={['x-small','small','normal','medium']} textAlign="justify">
       Beyond the code, I'm someone who likes figuring out how things fit together —
       untangling a gnarly bug, learning a new framework by breaking it first, or turning
